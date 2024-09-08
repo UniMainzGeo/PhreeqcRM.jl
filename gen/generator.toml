@@ -12,4 +12,8 @@ auto_mutability_with_new = true     # Allow creating empty structs
 auto_mutability_ignorelist = []
 auto_mutability_includelist = []
 
+
+extract_c_comment_style = "doxygen"
+
+
 export_symbol_prefixes = ["CX", "clang_"]
