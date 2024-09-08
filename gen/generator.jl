@@ -1,3 +1,9 @@
+# This creates the wrappers for all the C functions in the PhreeqcRM library
+# It only has to be run once the version of the library is updated.
+# run it with
+# julia> using Clang
+# julia> include("generator.jl")
+#
 using Clang.Generators
 using Clang.LibClang.Clang_jll
 using Pkg
