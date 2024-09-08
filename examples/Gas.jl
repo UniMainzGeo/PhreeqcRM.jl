@@ -77,7 +77,6 @@ ic1  = zeros(Int32,     7*nxyz)
 ic2  = zeros(Int32,     7*nxyz)
 f1   = zeros(Float64,   7*nxyz)
 for i = 1:nxyz;
-
     ic1[i] = 1;                 # Solution 1
 	ic1[nxyz + i] = -1;         # Equilibrium phases none
 	ic1[2 * nxyz + i] = -1;     # Exchange 1
@@ -101,7 +100,6 @@ for i = 1:nxyz;
 	f1[6 * nxyz + i] = 1.0;     # Mixing fraction ic1 Kinetics
 end
 status = PC.RM_InitialPhreeqc2Module(id, ic1, ic2, f1);
-
 
 # Get gases
 gas_moles   = zeros(ngas * nxyz);
