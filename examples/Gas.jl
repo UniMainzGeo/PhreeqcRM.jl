@@ -1,8 +1,10 @@
+# This reproduces the Gas_c.c example
 using PhreeqcRM
 using PhreeqcRM_jll
 import PhreeqcRM.LibPhreeqcRM as PC
 using Printf
 
+# pretty printing
 function PrintCells(gcomps::Vector{String}, gas_moles::Vector{Float64},
     gas_p::Vector{Float64}, gas_phi::Vector{Float64}, nxyz::Int,
     str::String)
@@ -14,7 +16,6 @@ function PrintCells(gcomps::Vector{String}, gas_moles::Vector{Float64},
         for i in 0:2 # component
             k = i * nxyz + j
             @printf "%8s  %10.4f  %10.4f  %10.4f\n" gcomps[i+1] gas_moles[k+1] gas_p[k+1] gas_phi[k+1]
-
         end
     end
 end
