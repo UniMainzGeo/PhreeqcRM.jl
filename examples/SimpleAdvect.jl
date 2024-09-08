@@ -122,7 +122,7 @@ status = PC.RM_InitialPhreeqc2Concentrations(id, bc_conc, nbound, bc1, bc2, bc_f
 # --------------------------------------------------------------------------
 # Transient loop
 # --------------------------------------------------------------------------
-nsteps = 2;
+nsteps = 10;
 pressure = zeros(nxyz );
 temperature = zeros(nxyz );
 for i = 1:nxyz
