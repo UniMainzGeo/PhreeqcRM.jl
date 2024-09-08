@@ -1,0 +1,7 @@
+name = "PhreeqcRM"
+uuid = "b7df18da-f5d9-4b84-8c87-a215783c94a6"
+authors = ["Boris Kaus <kaus@uni-mainz.de>"]
+version = "0.1.0"
+
+[deps]
+PhreeqcRM_jll = "0e4d9a47-ac49-502f-82ee-cd7c370ff5e0"
