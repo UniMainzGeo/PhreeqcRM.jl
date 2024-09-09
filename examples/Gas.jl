@@ -52,8 +52,7 @@ if (status != 0)
 end
 
 # Run file to define solutions and gases for initial conditions
-inputfile_dir = joinpath(PhreeqcRM_jll.artifact_dir,"test_input"); # the example input files are in the test_input directory
-status = PC.RM_RunFile(id, 0, 1, 0, joinpath(inputfile_dir,"gas.pqi"));
+status = PC.RM_RunFile(id, 0, 1, 0, joinpath(testfile_dir,"gas.pqi"));
 if (status != 0)
     status = PC.RM_OutputMessage(id, "Unable to run input file.");
 end
